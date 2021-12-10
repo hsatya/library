@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <div id="content">
+           <form id="bookForm">
+                <label for="books">Select Book: </label>
+                <select name="books" id="booksList" onchange="getBooks();">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="sanskrit">Sanskrit</option>
+                </select>
+                <input type="submit" name="button" id="add" value="Add">
+                <br> <br>
+                <label for="price">Enter Amount: </label>
+                <input type="number" name="price" id="price">
+                <br> <br>
+                <label for="result">Result</label>
+                <input type="submit" name="result" id="result" value="Result">
+           </form>
+            <table>
+            <thead>
+                <tr>
+                    <td>Book</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+            </table>
+        </div>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
